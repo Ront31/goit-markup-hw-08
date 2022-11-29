@@ -1,0 +1,30 @@
+.clients__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.clients__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid currentColor;
+  border-radius: 4px;
+  width: 170px;
+  height: 92px;
+
+  color: $teamSocial-linksColor;
+
+  transition: color $anim;
+}
+
+.clients__link:hover,
+.clients__link:focus {
+  color: $hoverTextColor;
+}
+
+.clients__icon {
+  fill: currentColor;
+}
