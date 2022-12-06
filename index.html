@@ -19,40 +19,47 @@
     <header class="header">
       <div class="container header">
         <a href="./index.html" class="logo link"><span class="logo__web">Web</span>Studio</a>
-        <nav class="nav">
-          <ul class="nav__list list">
-            <li class="nav__item">
-              <div class="current-thumb">
-                <a href="./index.html" class="nav__link nav__link--current link">Студія</a>
-              </div>
+        <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+          <svg class="menu-toggle__icon" width="40" height="40">
+            <use href="./images/icons/symbol-defs.svg#icon-menu"></use>
+          </svg>
+        </button>
+        <div class="menu">
+          <nav class="nav">
+            <ul class="nav__list list">
+              <li class="nav__item">
+                <div class="current-thumb">
+                  <a href="./index.html" class="nav__link nav__link--current link">Студія</a>
+                </div>
+              </li>
+              <li class="nav__item">
+                <a href="./portfolio.html" class="nav__link link">Портфоліо</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link link">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+
+          <ul class="header-contacts list">
+            <li class="header-contacts__item">
+              <a href="mailto:info@devstudio.com" class="header-contacts__link link">
+                <svg class="header-contacts__icon" , width="12" , height="16">
+                  <use href="./images/icons/symbol-defs.svg#icon-mail"></use>
+                </svg>
+                info@devstudio.com
+              </a>
             </li>
-            <li class="nav__item">
-              <a href="./portfolio.html" class="nav__link link">Портфоліо</a>
-            </li>
-            <li class="nav__item">
-              <a href="#" class="nav__link link">Контакти</a>
+            <li class="header-contacts__item">
+              <a href="tel:+380961111111" class="header-contacts__link link">
+                <svg class="header-contacts__icon" , width="10" , height="16">
+                  <use href="./images/icons/symbol-defs.svg#icon-smartphone"></use>
+                </svg>
+                +38 096 111 11 11
+              </a>
             </li>
           </ul>
-        </nav>
-
-        <ul class="header-contacts list">
-          <li class="header-contacts__item">
-            <a href="mailto:info@devstudio.com" class="header-contacts__link link">
-              <svg class="header-contacts__icon" , width="12" , height="16">
-                <use href="./images/icons/symbol-defs.svg#icon-mail"></use>
-              </svg>
-              info@devstudio.com
-            </a>
-          </li>
-          <li class="header-contacts__item">
-            <a href="tel:+380961111111" class="header-contacts__link link">
-              <svg class="header-contacts__icon" , width="10" , height="16">
-                <use href="./images/icons/symbol-defs.svg#icon-smartphone"></use>
-              </svg>
-              +38 096 111 11 11
-            </a>
-          </li>
-        </ul>
+        </div>
       </div>
     </header>
     <main>
@@ -162,10 +169,18 @@
           <ul class="team-grid list">
             <li class="team-grid__item">
               <img
-                src="./images/main/our-team-igor.jpg"
+                srcset="
+                  ./images/main/demianenko480.jpg     450w,
+                  ./images/main/demianenko480@2x.jpg  900w,
+                  ./images/main/demianenko768.jpg     354w,
+                  ./images/main/demianenko768@2x.jpg  708w,
+                  ./images/main/demianenko1200.jpg    270w,
+                  ./images/main/demianenko1200@2x.jpg 540w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                src="./images/main/demianenko480.jpg"
                 alt="Член команди Ігор"
-                width="270"
-                height="260"
+                loading="lazy"
                 class="team-grid__image"
               />
               <div class="team-grid__container">
@@ -229,10 +244,17 @@
             </li>
             <li class="team-grid__item">
               <img
-                src="./images/main/our-team-olga.jpg"
+                srcset="
+                  ./images/main/repina480.jpg     450w,
+                  ./images/main/repina480@2x.jpg  900w,
+                  ./images/main/repina768.jpg     354w,
+                  ./images/main/repina768@2x.jpg  708w,
+                  ./images/main/repina1200.jpg    270w,
+                  ./images/main/repina1200@2x.jpg 540w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                src="./images/main/repina480.jpg"
                 alt="Член команди Ольга"
-                width="270"
-                height="260"
                 class="team-grid__image"
               />
               <div class="team-grid__container">
@@ -296,10 +318,17 @@
             </li>
             <li class="team-grid__item">
               <img
-                src="./images/main/our-team-mykola.jpg"
+                srcset="
+                  ./images/main/tarasov480.jpg     450w,
+                  ./images/main/tarasov480@2x.jpg  900w,
+                  ./images/main/tarasov768.jpg     354w,
+                  ./images/main/tarasov768@2x.jpg  708w,
+                  ./images/main/tarasov1200.jpg    270w,
+                  ./images/main/tarasov1200@2x.jpg 540w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                src="./images/main/tarasov480.jpg"
                 alt="Член команди Микола"
-                width="270"
-                height="260"
                 class="team-grid__image"
               />
               <div class="team-grid__container">
@@ -363,10 +392,17 @@
             </li>
             <li class="team-grid__item">
               <img
-                src="./images/main/our-team-michael.jpg"
+                srcset="
+                  ./images/main/yermakov480.jpg     450w,
+                  ./images/main/yermakov480@2x.jpg  900w,
+                  ./images/main/yermakov768.jpg     354w,
+                  ./images/main/yermakov768@2x.jpg  708w,
+                  ./images/main/yermakov1200.jpg    270w,
+                  ./images/main/yermakov1200@2x.jpg 540w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                src="./images/main/yermakov480.jpg"
                 alt="Член команди Михайло"
-                width="270"
-                height="260"
                 class="team-grid__image"
               />
               <div class="team-grid__container">
@@ -640,6 +676,70 @@
         </form>
       </div>
     </div>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg class="menu-toggle__icon" width="40" height="40">
+          <use href="./images/icons/symbol-defs#icon-close-menu"></use>
+        </svg>
+      </button>
+
+      <div class="mobile-menu">
+        <nav class="mobile-nav">
+          <ul class="mobile-nav__list list">
+            <li class="mobile-nav__item">
+              <a class="mobile-nav__link mobile-nav__link--current link" href="./index.html"
+                >Студія</a
+              >
+            </li>
+            <li class="mobile-nav__item">
+              <a class="mobile-nav__link link" href="./portfolio.html">Портфоліо</a>
+            </li>
+            <li class="mobile-nav__item"><a class="mobile-nav__link link" href="#">Контакти</a></li>
+          </ul>
+        </nav>
+
+        <ul class="mobile-contacts list">
+          <li class="mobile-contacts__item">
+            <a
+              class="mobile-contacts__link mobile-contacts__link--phone link"
+              href="tel:+380961111111"
+            >
+              +38 096 111 11 11</a
+            >
+          </li>
+          <li class="mobile-contacts__item">
+            <a
+              class="mobile-contacts__link mobile-contacts__link--mail link"
+              href="mailto:info@devstudio.com"
+            >
+              info@devstudio.com</a
+            >
+          </li>
+        </ul>
+
+        <ul class="mobile-socials list">
+          <li class="mobile-socials__item">
+            <a href="https://instagram.com" class="mobile-socials__link link">Instagram</a>
+          </li>
+          <li class="mobile-socials__item">
+            <a href="https://twitter.com" class="mobile-socials__link link">Twitter</a>
+          </li>
+          <li class="mobile-socials__item">
+            <a href="https://facebook.com" class="mobile-socials__link link">Facebook</a>
+          </li>
+          <li class="mobile-socials__item">
+            <a href="https://linkedin.com" class="mobile-socials__link link">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+    </div>
     <script src="./js/modal.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

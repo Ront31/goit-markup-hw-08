@@ -65,6 +65,10 @@
   }
 }
 
+.team-grid__item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
 .team-grid__item {
   @media screen and (min-width: 768px) {
     width: calc((100% - 30px) / 2);
