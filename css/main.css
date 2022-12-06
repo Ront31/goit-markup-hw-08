@@ -495,8 +495,8 @@ button {
   width: 360px;
   font-style: normal;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.62;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
@@ -504,6 +504,8 @@ button {
 @media screen and (min-width: 1200px) {
   .hero__title {
     width: 696px;
+    font-size: 44px;
+    line-height: 1.36;
   }
 }
 
@@ -568,14 +570,19 @@ button {
   }
 }
 
+.benefits__item {
+  margin-bottom: 30px;
+}
 @media screen and (min-width: 768px) {
   .benefits__item {
     width: calc((100% - 30px) / 2);
+    margin-bottom: 0;
   }
 }
 @media screen and (min-width: 1200px) {
   .benefits__item {
     width: calc((100% - 90px) / 4);
+    margin-bottom: 0;
   }
 }
 
@@ -585,6 +592,11 @@ button {
   text-transform: uppercase;
   margin-bottom: 10px;
   color: #212121;
+}
+@media screen and (max-width: 767px) {
+  .benefits__title {
+    text-align: center;
+  }
 }
 
 .benefits__text {
