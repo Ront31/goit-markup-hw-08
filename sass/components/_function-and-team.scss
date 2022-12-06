@@ -1,5 +1,8 @@
 .function {
   padding-top: 0;
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
 }
 
 .function__thumb {
@@ -29,9 +32,7 @@
   background-color: $teamBackgroundColor;
 }
 
-.function__list,
-.team-grid {
-  list-style-type: none;
+.function__list {
   display: flex;
 }
 
@@ -39,20 +40,39 @@
   margin-right: 30px;
 }
 
-.team-grid__item:not(.team-grid__item:last-child) {
-  margin-right: 30px;
-}
-
 .function__title,
 .team__title,
 .clients__title {
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.17;
   text-align: center;
 
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 
   color: $secondaryTextColor;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
+}
+
+.team-grid {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+}
+
+.team-grid__item {
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 30px) / 2);
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 90px) / 4);
+  }
 }
 
 .team-grid__title {
@@ -109,5 +129,8 @@
   background-color: $universalColor;
 
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 24px;
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 30px;
+  }
 }

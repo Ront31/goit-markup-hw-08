@@ -24,12 +24,21 @@
 }
 
 .benefits__list {
-  list-style-type: none;
-  display: flex;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
 }
 
-.benefits__item:not(.benefits__item:last-child) {
-  margin-right: 30px;
+.benefits__item {
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 30px) / 2);
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 90px) / 4);
+  }
 }
 
 .benefits__title {
