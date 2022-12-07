@@ -31,9 +31,12 @@
   }
 }
 
+.benefits__item:not(:last-child) {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 30px;
+  }
+}
 .benefits__item {
-  margin-bottom: 30px;
-
   @media screen and (min-width: 768px) {
     width: calc((100% - 30px) / 2);
     margin-bottom: 0;

@@ -153,9 +153,13 @@
   border-radius: 4px;
   padding-left: 16px;
   background-color: $heroBackgroundColor;
-  width: 358px;
+  width: 100%;
   color: $universalColor;
   height: 50px;
+
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+  }
 }
 
 .join__input::placeholder {
