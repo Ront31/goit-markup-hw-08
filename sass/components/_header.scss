@@ -4,10 +4,13 @@
   min-height: 60px;
   display: flex;
   align-items: center;
-  margin: 0;
 
   @media screen and (min-width: 768px) {
     min-height: 80px;
+  }
+
+  @media screen and (max-width: 1199px) {
+    margin: 0;
   }
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -23,10 +26,6 @@
   letter-spacing: 0.03em;
   color: $studioColor;
   margin-right: auto;
-
-  @media screen and (min-width: 1200px) {
-    margin-right: 93px;
-  }
 }
 
 .logo__web {
@@ -70,6 +69,8 @@
   }
 
   @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.14;
     padding-top: 32px;
     padding-bottom: 32px;
   }

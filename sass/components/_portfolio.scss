@@ -99,7 +99,7 @@
   color: $universalColor;
   background-color: $hoverTextColor;
 
-  transition: box-shadow $anim;
+  transition: box-shadow $anim, transform $anim;
 }
 
 .img-list__link:hover,
